@@ -7,8 +7,28 @@ In `package.json` the `"dependecies"` field holds all required external packages
 Semantic versioning = `"package": "MAJOR.MINOR.PATCH"`
 
 MAJOR changes increment when incomatble API changes are made.
+
 MINOR changes are when backwards-compatible functionality is added. Does not break.
+
 PATCH changes are backwards-compatible bug fixes. Does not break.
 
 `~` prefix in version number keeps dependecy up to date with latest PATCH version.
 `^` prefix in version numbers allows npm to install the latest PATCH and MINOR changes.
+
+## Basic Node and Express
+
+Express routes are handeled by creating an express object and using the following structure:
+`app.METHOD(PATH, HANDLER).` Where: 
+
+MTHOD is the http method.
+
+PATH is the relative path on the server.
+
+HANDLER is a function that express calls when a route is matched.
+
+You can send files using `res.sendFile(file_path)` (this can be used to serve html).
+
+`.env` files are hidden, only visible server side. Useful for keeping secrets and such. 
+`.env` files are accessed using `process.env.VAR_NAME`
+
+MIDDLEWEARE functions take OBJECT, RESPONSE, and NEXT FUNCTION as arguments.
