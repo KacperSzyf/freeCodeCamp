@@ -31,4 +31,4 @@ You can send files using `res.sendFile(file_path)` (this can be used to serve ht
 `.env` files are hidden, only visible server side. Useful for keeping secrets and such. 
 `.env` files are accessed using `process.env.VAR_NAME`
 
-MIDDLEWEARE functions take OBJECT, RESPONSE, and NEXT FUNCTION as arguments.
+MIDDLEWEARE functions take OBJECT, RESPONSE, and NEXT FUNCTION as arguments. Where NEXT FUNCTION is comma separated in route args.
